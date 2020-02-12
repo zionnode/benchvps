@@ -175,10 +175,10 @@ speed_test() {
     echo ${latency} >> /tmp/speed.txt
 }
 
-speed() {
-    speed_test 'http://cachefly.cachefly.net/100mb.test' 'CacheFly'
-    speed_test 'http://speedtest.sea01.softlayer.com/downloads/test100.zip' 'Softlayer, Seattle, WA'
-}
+# speed() {
+#     # speed_test 'http://cachefly.cachefly.net/100mb.test' 'CacheFly'
+#     # speed_test 'http://speedtest.sea01.softlayer.com/downloads/test100.zip' 'Softlayer, Seattle, WA'
+# }
 
 speed_test_cn(){
     if [[ $1 == '' ]]; then
